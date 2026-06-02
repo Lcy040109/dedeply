@@ -4,6 +4,8 @@ WORKDIR /tmp
 
 COPY index.js index.html package.json ./
 
+ENV PORT=3000
+
 EXPOSE 3000/tcp
 
 RUN apk update && apk upgrade &&\
